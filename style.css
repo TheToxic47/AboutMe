@@ -1,0 +1,105 @@
+@font-face {
+    font-family: Asher;
+    src: url(fonts/AsherPunkDemoVersion-ALZJ2.ttf) format('truetype');
+}
+@font-face {
+    font-family: Parissiene;
+    src: url(fonts/Parisienne.woff2);
+}
+@font-face {
+    font-family: Roboto;
+    src: url(fonts/Roboto.woff2);
+    }
+
+html{
+    background-image: url(img/fondo1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+header{
+    background-image: url(img/fondo1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.titulo{
+    justify-content: center;
+    text-align: center;
+    font-family: Parissiene;
+    padding-top: 15%;
+    padding-bottom: 30px;
+}
+
+.redesTitulo{
+    font-family: 'Courier New', Courier, monospace;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+
+.redes{   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    padding-bottom: 10px;
+}
+.playlist{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+a{
+    text-decoration: none;
+    font-size: 100%;
+    font-family: Roboto;
+}
+.display-1{
+    font-size: 800%;
+}
+
+.audioPyke{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 15px;
+}
+audio {
+    width: 300px;
+    height: 30px;
+}
+
+@media screen and (max-width: 1247px) {
+    html{
+        background-image: url(img/fondo1.png);
+    background-repeat: no-repeat;
+    background-size: auto;
+    }
+    header{
+    background-image: url(img/fondo1.png);
+    background-repeat: no-repeat;
+    background-size: auto;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    html{
+        background-image: url(img/montañas.jpg);
+        background-size: auto;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    header {
+        background-image: url(img/montañas.jpg);
+        background-size: auto;
+        background-repeat: no-repeat;
+        background-position: center;
+        padding-top: 10%;
+    } 
+    .display-1{
+        font-size: 500%;
+    }
+}
+
