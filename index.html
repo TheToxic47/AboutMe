@@ -34,30 +34,16 @@
             </div>
             
      </div>
-            <div class="audioPyke">
-      <br>
-      <br>
-                <audio controls id="au" preload>
-            <source src="audio/pyke.mp3" type="audio/mp3" id="playaudio1">
-                </audio>
-    <br>
-    <br>
+            <div class="audio">
+                <button>
+                    <audio preload="" loop> <source src="audio/satellite.mp3" type="audio/mp3"> <embed src="audio/satellite.mp3" loop></audio> 
+                </button>
+
           </div>
   </header>
-        <div class="fondo2">
-            <div class="fondo3">
-
-            </div>
-        </div>
     </div>
     
     <script src="bootstrap.bundle.min.js"></script>
-    <script src="jquery-3.6.0.min.js"></script>
-        <script>
-        $("#audioPyke").ready(function () {
-        $(".audio")[0].play();
-        console.log("pasó");
-        });
-        </script>
+        <script src="script.js"></script>
 </body>
 </html>
