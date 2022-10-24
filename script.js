@@ -12,25 +12,37 @@ class MainController {
       })
       
       // Button:
-      const button = document.createElement("button")
-      button.textContent = "Nashe"
+
+      const button = document.getElementById("boton")
+      button.textContent = "♫"
+      button.classList.add("boton1");
       button.addEventListener("click", (event) => {
         // Remove button:
 
         
         // Add loading:
-        container.appendChild(loadingElement)
+
         
         // Trigger playback:
         audioPlayer.play()
       })
       
-      container.appendChild(button)
+
     }
     
 
     
   }
+  function musica(){
+    container.appendChild(loadingElement)
+        
+        // Trigger playback:
+        audioPlayer.play()
+      
+      
+      container.appendChild(button)
+  }
+
   
   function awake(){
     window.controller = new MainController(document.body)
