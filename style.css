@@ -28,8 +28,7 @@ header{
     justify-content: center;
     text-align: center;
     font-family: Parissiene;
-    padding-top: 15%;
-    padding-bottom: 30px;
+    padding-top: 25vh;;
 }
 
 .redesTitulo{
@@ -60,22 +59,31 @@ a{
     font-size: 800%;
 }
 
-.audioPyke{
+.audio{
     display: flex;
     justify-content: center;
     align-items: center;
+
+}
+.centrado{
+    display: flex;
+    justify-content: center;;
+    align-items: center;
     padding-top: 15px;
 }
+
 .boton1{
-    padding-right: 0px;
     z-index: -1;
     color: white;
     display: flex;
-  justify-content: end;
-  padding-right: 40px;
-  margin-left: 190vh;
+    justify-content: start;
+    align-items: center;
+    font-size: 3vh;;
 }
+.boton1:hover{
+    color: gray !important;
 
+}
 
 @media screen and (max-width: 1247px) {
     html{

@@ -13,23 +13,17 @@ class MainController {
       
       // Button:
 
-      const button = document.getElementById("boton")
+      var button = document.getElementById("boton")
       button.textContent = "♫"
       button.classList.add("boton1");
       button.addEventListener("click", (event) => {
-        // Remove button:
-
-        
-        // Add loading:
-
-        
-        // Trigger playback:
         audioPlayer.play()
+        button.classList.add("activado")
+        event.preventDefault()  
       })
-      
-
     }
-    
+  
+
 
     
   }
@@ -42,7 +36,12 @@ class MainController {
       
       container.appendChild(button)
   }
+  //stop playback
+  function stop(){
+    container.removeChild(loadingElement)
+    container.removeChild(button)
 
+  }
   
   function awake(){
     window.controller = new MainController(document.body)
