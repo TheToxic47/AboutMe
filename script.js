@@ -17,40 +17,48 @@ class MainController {
       button.textContent = " "
       button.classList.add("boton1");
       button.addEventListener("click", (event) => {
-        audioPlayer.play()
-        button.classList.add("activado")
-        event.preventDefault()  
-        button.classList.remove("boton1")
-        button.classList.add("boton2")
+      if (event.target.classList.contains("boton1")){
+          audioPlayer.play()
+          button.classList.add("activado")
+          event.preventDefault()  
+          button.classList.remove("boton1")
+          button.classList.add("boton2" , "activado")
+        }
+      else if (event.target.classList.contains("activado")){
+          audioPlayer.pause()
+          button.classList.remove("activado" , "boton2")
+          button.classList.add("boton1")
+          
+      }
+        
       })
+      var button2 = document.getElementsByClassName("activado")
+      if (button2.classList.contains(`boton2`)){
+        button2.classList.remove("boton2" , "activado")
+        button2.classList.add("boton1")
+      }
+
+
 
       // Button:
       
             
     }
   }
-  
-  
-
-  function musica(){
-    container.appendChild(loadingElement)
-        
-        // Trigger playback:
-        audioPlayer.play()
-      
-      
-      container.appendChild(button)
-  }
-  //stop playback
-  function stop(){
-    container.removeChild(loadingElement)
-    container.removeChild(button)
-
-  }
-  
   function awake(){
     window.controller = new MainController(document.body)
   }
   
   document.addEventListener("DOMContentLoaded", awake)
   
+  //AudioPrueba
+  // The audio HTML element
+  var button = document.getElementById('mute');
+  button.onclick = function (){
+
+    if (video.muted = false) {    
+      video.muted = true;
+}
+
+
+  };
