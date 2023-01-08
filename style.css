@@ -80,11 +80,26 @@ a{
     justify-content: start;
     align-items: center;
     font-size: 3vh;;
+    background-image: url(img/muted.png);
+    background-repeat: no-repeat;
+    background-size: 2.5vh;
+}
+.boton2{
+    z-index: -1;
+    color: white;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    font-size: 3vh;;
+    background-image: url(img/play.png);
+    background-repeat: no-repeat;
+    background-size: 2.5vh;
 }
 .boton1:hover{
-    color: gray !important;
+    color: gray;
 
 }
+
 
 @media screen and (max-width: 1247px) {
     html{

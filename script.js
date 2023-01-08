@@ -8,25 +8,30 @@ class MainController {
       // Audio:
       const audioPlayer = document.getElementsByTagName("audio")[0]
       audioPlayer.addEventListener("play", () => {
-  document.title = "Satellite"
+  document.title = "About Me"
       })
       
       // Button:
 
       var button = document.getElementById("boton")
-      button.textContent = "♫"
+      button.textContent = " "
       button.classList.add("boton1");
       button.addEventListener("click", (event) => {
         audioPlayer.play()
         button.classList.add("activado")
         event.preventDefault()  
+        button.classList.remove("boton1")
+        button.classList.add("boton2")
       })
+
+      // Button:
+      
+            
     }
+  }
+  
   
 
-
-    
-  }
   function musica(){
     container.appendChild(loadingElement)
         
