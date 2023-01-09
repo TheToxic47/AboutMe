@@ -7,9 +7,14 @@
     src: url(fonts/Parisienne.woff2);
 }
 @font-face {
+    font-family: Kusanagi;
+    src: url(fonts/kizard.otf);
+}
+@font-face {
     font-family: Roboto;
     src: url(fonts/Roboto.woff2);
-    }
+}
+
 
 html{
     background-image: url(img/fondo1.png);
@@ -22,14 +27,22 @@ header{
     background-repeat: no-repeat;
     background-size: cover;
 }
-
-
-
+.footer{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    padding-left: 5vh;
+    padding-top: 5vh;
+    
+}
 .titulo{
     justify-content: center;
     text-align: center;
     font-family: Parissiene;
-    padding-top: 25vh;;
+    padding-top: 25vh;
+    color: rgba(255, 255, 255, 0.973); 
+    user-select: none;
 }
 
 .redesTitulo{
@@ -60,12 +73,13 @@ a{
     font-size: 800%;
 }
 
-.audio{
-    display: flex;
-    justify-content: center;
-    align-items: center;
 
+.boton{
+    max-width: 2.5vh;
+    user-select: none;
+    z-index: -1;
 }
+
 .centrado{
     display: flex;
     justify-content: center;;
@@ -79,7 +93,7 @@ a{
     display: flex;
     justify-content: start;
     align-items: center;
-    font-size: 3vh;;
+    font-size: 3vh;
     background-image: url(img/muted.png);
     background-repeat: no-repeat;
     background-size: 2.5vh;
@@ -87,10 +101,10 @@ a{
 .boton2{
     z-index: -1;
     color: white;
+    font-size: 3vh;
     display: flex;
     justify-content: start;
     align-items: center;
-    font-size: 3vh;;
     background-image: url(img/play.png);
     background-repeat: no-repeat;
     background-size: 2.5vh;
@@ -130,6 +144,9 @@ a{
     } 
     .display-1{
         font-size: 500%;
+    }
+    .titulo{
+        -webkit-text-stroke: 2px rgb(255, 255, 255);
     }
 }
 

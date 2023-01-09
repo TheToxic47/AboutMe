@@ -32,17 +32,7 @@ class MainController {
       }
         
       })
-      var button2 = document.getElementsByClassName("activado")
-      if (button2.classList.contains(`boton2`)){
-        button2.classList.remove("boton2" , "activado")
-        button2.classList.add("boton1")
-      }
 
-
-
-      // Button:
-      
-            
     }
   }
   function awake(){
