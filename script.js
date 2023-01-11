@@ -19,7 +19,6 @@ class MainController {
       button.addEventListener("click", (event) => {
       if (event.target.classList.contains("boton1")){
           audioPlayer.play()
-          button.classList.add("activado")
           event.preventDefault()  
           button.classList.remove("boton1")
           button.classList.add("boton2" , "activado")
